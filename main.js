@@ -17,18 +17,16 @@ for (var i = 0; i<10; i++){
     const newDiv = document.createElement("button");
     newDiv.innerText = games[i].name;
     newDiv.id = `game-${i+1}`;
-    newDiv.addEventListener('click', () => {
-    window.location.href = 'games/game1.html'; 
-});
     newDiv.classList.add("box-1");
+    const gamePageName = `game${i+1}`;
+    newDiv.addEventListener('click', () => {
+        window.location.href = `games/${gamePageName}.html`; 
+    });
     if (parentContainer) {
         parentContainer.appendChild(newDiv);
     } else {
         console.error("Parent container not found!");
     }
-    newDiv.offsetHeight;
-    newDiv.style.animationDelay = `${i * 0.2}s`;
-    newDiv.classList.add("animate");
 }
 
 get
