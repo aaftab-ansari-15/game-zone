@@ -1,3 +1,7 @@
+.logo:hover {
+  animation-name: logoanime;
+  animation-duration: 2s;
+}
 .text-stroke {
   color: white;
  /* -webkit-text-stroke-width: 1px; 
@@ -17,7 +21,50 @@
   font-size: 20px;
   justify-content: center;
   text-align: center;
+  color: #0F2854;
 }
 .box-1:nth-child(even) {
     background-color: #BDE8F5;
+}
+.box-1:hover{
+  width: 200px;
+  height: 200px;
+  font-size: 30px;
+  border: 2px solid white;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-delay: 2;
+}
+
+
+@keyframes logoanime {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
