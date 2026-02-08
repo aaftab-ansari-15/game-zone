@@ -19,9 +19,22 @@
         <div class="text-white" style="font-size:50px;cursor:pointer">&#9776;</div>
     </nav>
     <div class="pt-5 h-100" style="background-color: #0D1A63;">
-       game 1
+        <div class="text-center">
+            <h3 class="display-3 text-white">Guess the number between 1 to 5</h3>
+            <div class="pt-3">
+                <input id="guessTheNumber" class="w-25" type="number" min="1" max="100" name="guess_the_number" />
+                <button id="randomNumber" class="bg-white">Click here for Result</button>
+            </div>
+            <div class="d-flex justify-content-center pt-5">
+            <div class="box-1">
+                <span id="randomNumberBox" class="display-4 fw-bolder"></span>
+            </div>
+            </div>
+            <h3 id="messageBox" class="pt-2 text-white"></h3>
+
+        </div>
     </div>
-<script src="main.js"></script>
+<script src="game1.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
